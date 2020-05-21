@@ -1,0 +1,140 @@
+{
+    "availableOptions": [
+        {
+            "label": "Available",
+            "className": "success"
+        },
+        {
+            "label": "Unavailable",
+            "className": "danger"
+        },
+        {
+            "label": "Haven't Indicated",
+            "className": "fas fa-user-times text-secondary"
+        }
+    ],
+    "peopleList": [
+        {
+            "id": 1,
+            "name": "Balaji",
+            "contactNumber": "+91 1234567890",
+            "availableDates": [
+                "22-05-2020",
+                "25-05-2020",
+                "26-05-2020",
+                "29-05-2020",
+                "30-05-2020"
+            ],
+            "unavailableDates": [
+                "05-06-2020",
+                "15-06-2020",
+                "21-05-2020"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Venkat",
+            "contactNumber": "+91 0987654321",
+            "availableDates": [
+                "28-05-2020",
+                "23-05-2020"
+            ],
+            "unavailableDates": [
+                "26-05-2020",
+                "29-05-2020",
+                "30-05-2020"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Hari",
+            "contactNumber": "+91 0987654321",
+            "availableDates": [
+                "22-05-2020",
+                "24-05-2020",
+                "26-05-2020",
+                "28-05-2020",
+                "30-05-2020"
+            ],
+            "unavailableDates": [
+                "27-05-2020",
+                "30-05-2020"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Sudharshan",
+            "contactNumber": "+91 1234567890",
+            "availableDates": [
+                "05-06-2020",
+                "15-06-2020",
+                "21-05-2020",
+                "03-06-2020"
+            ],
+            "unavailableDates": [
+                "22-05-2020",
+                "25-05-2020",
+                "26-05-2020",
+                "29-05-2020",
+                "30-05-2020"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Dharani",
+            "contactNumber": "+91 0987654321",
+            "availableDates": [
+                "23-05-2020",
+                "27-05-2020",
+                "29-05-2020"
+            ],
+            "unavailableDates": [
+                "26-05-2020",
+                "30-05-2020"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Prakash",
+            "contactNumber": "+91 1234567890",
+            "availableDates": [],
+            "unavailableDates": []
+        },
+        {
+            "id": 7,
+            "name": "Akshaya",
+            "contactNumber": "+91 0987654321",
+            "availableDates": [
+                "23-05-2020",
+                "27-05-2020",
+                "29-05-2020"
+            ],
+            "unavailableDates": [
+                "26-05-2020",
+                "28-05-2020",
+                "30-05-2020"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Subramanian",
+            "contactNumber": "+91 1234567890",
+            "availableDates": [],
+            "unavailableDates": []
+        },
+        {
+            "id": 9,
+            "name": "Praveen",
+            "contactNumber": "+91 0987654321",
+            "availableDates": [],
+            "unavailableDates": []
+        },
+        {
+            "id": 10,
+            "name": "Shashank",
+            "contactNumber": "+91 1234567890",
+            "availableDates": [],
+            "unavailableDates": []
+        }
+    ]
+}

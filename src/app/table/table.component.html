@@ -1,0 +1,57 @@
+<ngx-datatable class="material expandable fullHeight fullWidth" [columnMode]="'force'" [headerHeight]="90"
+    [rowHeight]="60" [footerHeight]="50" [rows]="calendarRows | search: searchText" [columns]="calendarColumns"
+    [scrollbarV]="true" [scrollbarH]="true" [sorts]="[{prop: 'name', dir: 'asc'}]">
+</ngx-datatable>
+
+<div class="modal fade" id="changeAvailabilityModal" tabindex="-1" role="dialog" aria-hidden="true"
+    data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Change Availability for {{selectedPeople?.name}} on
+                    {{selectedDate}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Select Availability:</p>
+                <ng-select [items]="availableOptions" bindLabel="label" [(ngModel)]="selectedAvailability"
+                    [clearable]="false" placeholder="Select Availability">
+                </ng-select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" (click)="changeAvailability()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #nameHeaderTemplate let-column="column" ngx-datatable-header-template let-sort="sortFn">
+    <span class="cursorPointer" (click)="sort()">
+        <h5 class="text-center text-dark">{{column.name}}</h5>
+    </span>
+    <input type="text" name="search" id="search" class="form-control"
+        placeholder="Search person(s) by Name, Contact Number" [(ngModel)]="searchText">
+</ng-template>
+
+<ng-template #dateHeaderTemplate let-column="column" ngx-datatable-header-template>
+    <div class="text-center text-dark">
+        <h6>{{column.name[0]}}</h6>
+        <h5>{{column.name[1]}}</h5>
+        <h6>{{column.name[2]}}</h6>
+    </div>
+</ng-template>
+
+<ng-template #nameRowTemplate let-column="column" let-row="row" let-value="value">
+    <h6 class="mb-0"><i class="fas fa-user mr-2"></i> {{value}}</h6>
+    <p class="font-weight-bold mb-0 mt-1"><i class="fas fa-phone-square-alt pr-2"></i>{{row.contactNumber}}</p>
+</ng-template>
+
+<ng-template #dateRowTemplate let-column="column" let-row="row" let-value="value">
+    <div id="dateCss" class="text-center fullHeight cursorPointer" (click)="openAvailalilityModal(column.prop, row)">
+        <div class="{{returnClasses(column.prop, row)}}">
+        </div>
+    </div>
+</ng-template>
