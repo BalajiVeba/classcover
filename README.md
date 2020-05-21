@@ -12,6 +12,9 @@ For live demo, vist [Calendar Availability Scheduler](http://classcover.vebadesi
 
 ## Documentation
 
+### Responsiveness
+Responsive across all devices.
+
 ### Data source
 
 Data is populated using the service from a configurable JSON file.

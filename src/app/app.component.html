@@ -1,7 +1,7 @@
 <div class="container-fluid fullHeight">
   <h1 class="text-center py-3">Calendar Availability Scheduler</h1>
   <div class="row mt-4">
-    <div class="col-6">
+    <div class="col-12 col-md-6">
       <div class="d-inline-flex">
         <h4>Date Range</h4>
         <p class="mb-0 ml-2">(Select start date and hover across the dates you want and select the end date)</p>
@@ -9,8 +9,8 @@
       <input class="form-control" placeholder="Click to select a date" angular-mydatepicker name="date"
         (click)="dp.toggleCalendar()" [(ngModel)]="dateRange" [options]="dateOptions" #dp="angular-mydatepicker" />
     </div>
-    <div class="col-6">
-      <div class="d-inline-flex fullHeight float-right">
+    <div class="col-12 col-md-6 text-sm-center mt-sm-1">
+      <div class="d-inline-flex fullHeight float-md-right">
         <span *ngFor="let availability of availableOptions" class="mr-3 my-auto">
           <i class="{{returnClasses(availability)}}"></i>{{availability.label}}
         </span>
