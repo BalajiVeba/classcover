@@ -29,3 +29,4 @@ Sort can be performed on `Name` either in ascending or descending order. By defa
 1. Select start date and hover across the dates you want and select the end date in the `Date Range` option to view the calendar availability schedule for a period.
 2. Clicking on the availability opens modal where one can change the availability for the particualar person on a particular date.
 3. `Legend` has been made configurable via a JSON file.
+4. Refreshing the page resets the data change made if any since it is loaded from a configurable JSON file.
