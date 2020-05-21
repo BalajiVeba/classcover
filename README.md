@@ -1,27 +1,31 @@
 # ClassCover
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
+## Live Demo
 
-## Development server
+For live demo, vist [Calendar Availability Scheduler](http://classcover.vebadesigns.com/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Run the project
 
-## Code scaffolding
+1. Install `Node.js` and `Angular CLI` using the links [Node.js](https://nodejs.org/en/) and [Angular CLI](https://cli.angular.io/).
+2. Run `npm i` to install the project dependencies in the root of the project folder.
+3. Run `npm start` to run the project. Navigate to `http://localhost:4200/` to open the project.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Documentation
 
-## Build
+### Data source
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Data is populated using the service from a configurable JSON file.
 
-## Running unit tests
+### Search functionality
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Search can be performed on the data based on `Name, Contact Number`
 
-## Running end-to-end tests
+### Sort functionality
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Sort can be performed on `Name` either in ascending or descending order. By default, data is populated based on ascending order.
 
-## Further help
+### Points assumed for development
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Select start date and hover across the dates you want and select the end date in the `Date Range` option to view the calendar availability schedule for a period.
+2. Clicking on the availability opens modal where one can change the availability for the particualar person on a particular date.
+3. `Legend` has been made configurable via a JSON file.
